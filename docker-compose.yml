@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  prom-server:
+    image: prom/prometheus  # Use the official Prometheus image
+    ports:
+      - 9090:9090  # Map container's default port 9090 to host's port 5000
+    volumes:
+      - ./prometheus-config.yml:/etc/prometheus/prometheus.yml  # Mount custom config file
