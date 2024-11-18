@@ -91,4 +91,4 @@ def metrics_endpoint():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=9090)
